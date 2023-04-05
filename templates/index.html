@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="static/css/style.css" />
+    <link rel="stylesheet" href="static/css/spinner.css" />
+
+    <script src="static/js/main.js" defer></script>
+    <title>AI SUBTITLE</title>
+  </head>
+  <body>
+    <header>
+      <div class="navbar">
+        <div class="logo">
+          <h2>AI SUBTITLE GENERATOR</h2>
+        </div>
+        <!-- <div class="nav-links">
+          <ul>
+            <li>
+              <a href="https://beta.openai.com/docs" target="_blank"
+                >OpenAI API Docs</a
+              >
+            </li>
+          </ul>
+        </div> -->
+      </div>
+    </header>
+
+    <main>
+      <section class="showcase">
+        <form id="video-form">
+          <h1>Add Your Video</h1>
+          <div class="form-control">
+            <input type="file" id="video_file" name="video_file">
+          </div>
+          <button type="submit" class="btn">Generate</button>
+        </form>
+      </section>
+
+      <section class="image">
+        <div class="msg"></div>
+        <div class="image-container">
+          <a id="file_download" href="">Download GENERATED VIDEO</a>
+
+          <video id="video_play" width="304" height="520" controls>
+            
+          </video>
+        </div>
+      </section>
+    </main>
+
+    <div class="spinner"></div>
+  </body>
+</html>
